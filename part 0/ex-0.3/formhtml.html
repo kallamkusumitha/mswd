@@ -1,0 +1,166 @@
+<html>
+<body>
+<center>
+<h1>LOGIN FORM</h1>
+</center>
+<style type="text/css">
+body{
+background-image:url(ball.jpeg);
+background-size:cover;
+background-attachment:fixed;
+}
+.content{
+background:white;
+width:50%;
+padding:40px;
+margin:100px auto;
+}
+*{
+margin:0;
+padding:0;
+}
+.body background{
+height:100%;
+width:100%;
+}
+h1{
+        background-color: grey;
+        color:black;
+        text-align:center;  
+        mix-blend-mode: screen;
+        font-size: 80px;
+  }
+.form-box{
+width: 380px;
+height: 810px;
+position :relative;
+margin:0% auto;
+background: invisible;
+padding: 5px;
+overflow: hidden;
+}
+.loginbtn {  
+
+  background-color: transparent;
+background: linear-gradient(to right , #ff105f , #ffad06);  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.loginbtn:hover {  
+  opacity: 1;  
+}  
+  
+
+.button-box{
+width: 120px;
+margin: 35px  auto;
+position :relative;
+box-shadow:pink;
+border-radius:30px;
+}
+
+.toggle-btn{
+padding: 10px 30px;
+cursor: pointer;
+background:transparent;
+border:0;
+outline:none;
+position:relative;
+}
+
+#btn{
+top: 0;
+left: 0; 
+position: absolute;
+width: 110px;
+height: 100%;
+background:FloralWhite;
+border-radius-30px;
+transition:.5s;
+}
+
+.input-group{
+top:180px;
+position: absolute;
+width:280px;
+transition:.5s;
+}
+
+.input-feild{
+width:100%;
+padding:10px 0;
+margin: 5px 0;
+border-left:0;
+border-top:0;
+border-right:0;
+border-bottom:lpx solid #999;
+outline : none;
+background: transparent;
+}
+.submit.btn{
+width=85%;
+ padding: 10px 30px;
+cursor: pointer;
+display:block;
+margin: auto;
+background:orange;
+border:0;
+outline:none;
+border-radius:30px;
+}
+
+#login{
+left:50px;
+}
+
+#register{
+left:450px;
+}
+</style>
+<h4>
+<div class ="hero">
+<div class="form-box">
+<div class="button-box">
+<div id="btn">
+</div>
+</div>
+<form id="login" class="input-group">
+  <label> USERNAME </label>   
+<input type="text" class="input-feild"  placeholder= "USERNAME" size="5" name="uname" required >
+<br>
+<label>PASSWORD</label>   
+<input type="password" class="input-feild"  placeholder= "Password" size="5" name="pass" required >
+<br>
+<input type="checkbox" >Remember password
+<br>
+<button type="submit" class="loginbtn">Login</button> 
+</form>
+
+</div>
+</div>
+
+<script>
+var x=document.getElementById("login");
+var y=document.getElementById("register");
+var z=document.getElementById("btn");
+
+function register(){
+x.style.left="-400px";
+y.style.left="50px";
+z.style.left="110px";
+}
+function login(){
+x.style.left="50px";
+y.style.left="450px";
+z.style.left="0px";
+}
+
+</script>
+</h4>
+</head>
+</body>
+</html>
