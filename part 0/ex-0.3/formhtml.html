@@ -1,137 +1,167 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <title>Customer login</title>
-  <link rel="stylesheet" href="">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-  <style>
-    *{
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
+<body>
+<center>
+<h1>LOGIN FORM</h1>
+</center>
+<style type="text/css">
+body{
+background-image:url(ball.jpeg);
+background-size:cover;
+background-attachment:fixed;
+}
+.content{
+background:white;
+width:50%;
+padding:40px;
+margin:100px auto;
+}
+*{
+margin:0;
+padding:0;
+}
+.body background{
+height:100%;
+width:100%;
+}
+h1{
+        background-color: grey;
+        color:black;
+        text-align:center;  
+        mix-blend-mode: screen;
+        font-size: 80px;
+  }
+.form-box{
+width: 380px;
+height: 810px;
+position :relative;
+margin:0% auto;
+background: invisible;
+padding: 5px;
+overflow: hidden;
+}
+.loginbtn {  
 
-    }
-    body{
-        background-image: url('123.jpg');
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-blend-mode: darken;
-        opacity: 0.98;
-        height: 100vh;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Ubuntu', sans-serif;
-    }
-    .container{
-      background-color: white;
-      border-radius: 7px;
-      overflow: hidden;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      width: 437px;
-      max-width: 100%;
-    }
-    .header{
-      text-align: center;
-      padding: 20px;
-      background-color: #0067a5;
-      color: white;
-    }
-    .header h2{
-      margin: 0;
-      font-size: 30px;
-    }
-    .main-form{
-      padding: 30px 40px;
-    }
-    .form{
-      padding-bottom: 20px;
-      margin-bottom: 10px;
-      position: relative;
-    }
-    .form input{
-      border: 2px solid #f0f0f0;
-      border-radius: 4px;
-      font-family: inherit;
-      width: 100%;
-      padding: 12px;
-      display: block;
-      font-size: 14px;
-    }
-    .form i{
-      position: absolute;
-      top: 32px;
-      right: 10px;
-      visibility: hidden;
+  background-color: transparent;
+background: linear-gradient(to right , #ff105f , #ffad06);  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.loginbtn:hover {  
+  opacity: 1;  
+}  
+  
 
-    }
-    .form small{
-      position: absolute;
-      bottom: 0;
-      left: 5px;
-      visibility: hidden;
-
-    }
-    button{
-      width: 100%;
-      font-family: inherit;
-      font-size: 18px;
-      padding: 10px;
-      border-radius: 7px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-      cursor: pointer;
-      color: white;
-      background-color: #104E8B;
-      outline: none;
-    }
-    button:hover{
-      background-color: #0067a5;
-      color: white;
-    }
-
-a {text-decoration: none;
-color: white;
+.button-box{
+width: 120px;
+margin: 35px  auto;
+position :relative;
+box-shadow:pink;
+border-radius:30px;
 }
 
+.toggle-btn{
+padding: 10px 30px;
+cursor: pointer;
+background:transparent;
+border:0;
+outline:none;
+position:relative;
+}
 
+#btn{
+top: 0;
+left: 0; 
+position: absolute;
+width: 110px;
+height: 100%;
+background:FloralWhite;
+border-radius-30px;
+transition:.5s;
+}
 
+.input-group{
+top:180px;
+position: absolute;
+width:280px;
+transition:.5s;
+}
 
-  </style>
+.input-feild{
+width:100%;
+padding:10px 0;
+margin: 5px 0;
+border-left:0;
+border-top:0;
+border-right:0;
+border-bottom:lpx solid #999;
+outline : none;
+background: transparent;
+}
+.submit.btn{
+width=85%;
+ padding: 10px 30px;
+cursor: pointer;
+display:block;
+margin: auto;
+background:orange;
+border:0;
+outline:none;
+border-radius:30px;
+}
+
+#login{
+left:50px;
+}
+
+#register{
+left:450px;
+}
+</style>
+<h4>
+<div class ="hero">
+<div class="form-box">
+<div class="button-box">
+<div id="btn">
+</div>
+</div>
+<form id="login" class="input-group">
+  <label> USERNAME </label>   
+<input type="text" class="input-feild"  placeholder= "USERNAME" size="5" name="uname" required >
+<br>
+<label>PASSWORD</label>   
+<input type="password" class="input-feild"  placeholder= "Password" size="5" name="pass" required >
+<br>
+<input type="checkbox" >Remember password
+<br>
+<button type="submit" class="loginbtn">Login</button> 
+</form>
+
+</div>
+</div>
+
+<script>
+var x=document.getElementById("login");
+var y=document.getElementById("register");
+var z=document.getElementById("btn");
+
+function register(){
+x.style.left="-400px";
+y.style.left="50px";
+z.style.left="110px";
+}
+function login(){
+x.style.left="50px";
+y.style.left="450px";
+z.style.left="0px";
+}
+
+</script>
+</h4>
 </head>
-<body>
-  <div class="container">
-    <div class="header">
-      <h2> Login Form</h2>
-      <div><i style='font-size:24px' class='fas'></i></div>
-    </div>
-      <form  class="main-form"  action="https://www.google.com">
-
-        <div class="form">
-          <label for="">Email</label>
-          <input type="email" placeholder="Enter your valid email" id="email" autocomplete="off" required>
-          <i class="fas sucess">&#xf058;</i>
-          <i class="fas error">&#xf06a;</i>
-          <small class="message">error message</small>
-        </div>
-        <div class="form">
-          <label for="">Password</label>
-          <input type="password" placeholder="Enter your password" id="password1" autocomplete="off" required>
-          <i class="fas sucess">&#xf058;</i>
-          <i class="fas error">&#xf06a;</i>
-          <small class="message">error message</small>
-        </div>
-
-        <button type="button">
-    <a href="{% url 'dashboard' %}">Login</a>
-</button>
-                <p style="display: inline-block;padding-left: 15px;margin-left: 70px;">Not a Customer ? </p><a href="{% url 'Customersignup'%}" style="color:blue;">signup</a>
-
-      </form>
 </body>
 </html>
+
